@@ -1,4 +1,4 @@
-# 1 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c"
+# 1 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\Virtual User Generator\\include/lrun.h" 1
  
  
@@ -968,7 +968,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 1 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\Virtual User Generator\\include/SharedParameter.h" 1
 
@@ -1136,7 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 2 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "globals.h" 1
 
@@ -2668,14 +2668,14 @@ char *random_cardType;
 int randomNumber;
 int think_time = 10;
 
-# 3 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 3 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 4 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_01_launch.c" 1
 TC_01_launch()
@@ -2697,7 +2697,7 @@ TC_01_launch()
 
 	return 0;
 }
-# 5 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 5 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_02_click_store.c" 1
 TC_02_click_store()
@@ -2733,10 +2733,10 @@ lr_end_transaction("TC_02_click_store", 2);
 
 	return 0;
 }
-# 6 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 6 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
-# 1 "TC_03_click_sigin_link.c" 1
-TC_03_click_sigin_link()
+# 1 "TC_03_click_sign_link.c" 1
+TC_03_click_sign_link()
 {
 	lr_start_transaction("TC_03_click_sigin_link");
 		web_reg_save_param_ex(
@@ -2775,12 +2775,13 @@ TC_03_click_sigin_link()
 
 	return 0;
 }
-# 7 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 7 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_04_enter_sigin_credentails.c" 1
 TC_04_enter_sigin_credentails()
 {
-lr_end_transaction("TC_04_enter_sigin_credentails", 2);
+lr_start_transaction("TC_04_enter_sigin_credentails");
+
 
 web_reg_save_param_ex(
 		"ParamName=C_pet_categories",
@@ -2819,7 +2820,7 @@ web_reg_save_param_ex(
 
 	return 0;
 }
-# 8 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 8 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_05_select_pets.c" 1
 TC_05_select_pets()
@@ -2867,7 +2868,7 @@ web_reg_save_param_ex(
 
 	return 0;
 }
-# 9 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 9 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_06_select_product_id.c" 1
 TC_06_select_product_id()
@@ -2900,7 +2901,7 @@ lr_start_transaction("TC_06_select_product_id");
 
 	return 0;
 }
-# 10 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 10 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_07_select_item_id.c" 1
 TC_07_select_item_id()
@@ -2919,7 +2920,7 @@ TC_07_select_item_id()
 
 	return 0;
 }
-# 11 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 11 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_08_click_add_to_cart.c" 1
 TC_08_click_add_to_cart()
@@ -2957,7 +2958,7 @@ TC_08_click_add_to_cart()
 	lr_end_transaction("TC_08_click_add_to_cart", 2);
 	return 0;
 }
-# 12 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 12 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_09_fill_quantity_and_click_update_cart.c" 1
 TC_09_fill_quantity_and_click_update_cart()
@@ -2983,7 +2984,7 @@ TC_09_fill_quantity_and_click_update_cart()
 	lr_end_transaction("TC_09_fill_quantity_and_click_update_cart", 2);
 	return 0;
 }
-# 13 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 13 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_10_click_proceed_cart.c" 1
 TC_10_click_proceed_cart()
@@ -3033,7 +3034,7 @@ TC_10_click_proceed_cart()
 	lr_end_transaction("TC_10_click_proceed_cart", 2);
 	return 0;
 }
-# 14 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 14 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_11_enter_payment_details.c" 1
 TC_11_enter_payment_details()
@@ -3073,7 +3074,7 @@ TC_11_enter_payment_details()
 	lr_end_transaction("TC_11_enter_payment_details", 2);
 	return 0;
 }
-# 15 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 15 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_12_click_confirm_button.c" 1
 TC_12_click_confirm_button()
@@ -3095,7 +3096,7 @@ TC_12_click_confirm_button()
 	lr_end_transaction("TC_12_click_confirm_button", 2);
 	return 0;
 }
-# 16 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 16 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "TC_13_click_signout_link.c" 1
 TC_13_click_signout_link()
@@ -3114,12 +3115,12 @@ TC_13_click_signout_link()
 	lr_end_transaction("TC_13_click_signout_link", 2);
 	return 0;
 }
-# 17 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 17 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 18 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_scenario2\\\\combined_Jpet_store_scenario2.c" 2
+# 18 "c:\\users\\arunroshan.r\\documents\\vugen\\scripts\\jpet_store_webapplication\\jpet_store\\jpet_store_script1\\\\combined_Jpet_store_script1.c" 2
 

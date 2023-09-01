@@ -1,0 +1,9 @@
+HTTP/1.1 200 
+Date: Fri, 01 Sep 2023 09:02:32 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 4503
+Connection: keep-alive
+Set-Cookie: JSESSIONID=0E6EE4A837467C8C7F79B4278CC4A146; Path=/; HttpOnly
+Content-Language: en
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+
